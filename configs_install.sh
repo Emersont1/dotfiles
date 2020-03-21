@@ -9,7 +9,7 @@ fi
 mkdir_safe .dotfiles
 
 # Install Packages
-sudo pacman -S --noconfirm vim zsh i3 bdf-unifont feh xorg xorg-xinit dmenu pango notification-daemon libnotify lxterminal xsetwacom
+sudo pacman -S --noconfirm vim zsh i3-gaps bdf-unifont feh xorg xorg-xinit dmenu pango notification-daemon libnotify lxterminal xf86-input-wacom pulseaudio pavucontrol pulseaudio-alsa firefox evolution cmus
 
 #install yay
 git clone https://aur.archlinux.org/yay.git
@@ -26,7 +26,11 @@ git clone --depth=1 https://github.com/amix/vimrc.git .dotfiles/vim_runtime
 # Zsh
 git clone https://github.com/ohmyzsh/ohmyzsh.git .dotfiles/oh-my-zsh
 git clone https://github.com/zsh-users/zsh-completions .dotfiles/oh-my-zsh/custom/plugins/zsh-completions
-sudo chsh $(whoami) -s $(which zsh)
+sudo chsh -s $(which zsh) $(whoami)
 # i3
 ## Init the i3 config
 cat .config/i3/config.d/* > .config/i3/config
+
+# setup git identity
+git config --global user.name "Peter Taylor"
+git config --global user.email "info@emersont1.co.uk"

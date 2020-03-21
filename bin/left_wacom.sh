@@ -6,4 +6,4 @@ pad=$(xsetwacom list devices | grep PAD | cut -d':' -f2 | grep -o -E '[0-9]+')
 eraser=$(xsetwacom list devices | grep ERASER | cut -d':' -f2 | grep -o -E '[0-9]+')
 cursor=$(xsetwacom list devices | grep CURSOR | cut -d':' -f2 | grep -o -E '[0-9]+')
 
-xsetwacom set $stylus MapToOutput HDMI-A-0
+xsetwacom set $stylus MapToOutput $(xrandr | grep " connected " | awk '{ print$1 }' | sed -n 1p)
