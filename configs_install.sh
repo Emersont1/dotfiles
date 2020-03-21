@@ -8,10 +8,17 @@ fi
 
 mkdir_safe .dotfiles
 
-
 # Install Packages
-sudo pacman -S --noconfirm vim zsh i3 bdf-unifont feh
-yay -S siji-git
+sudo pacman -S --noconfirm vim zsh i3 bdf-unifont feh xorg xorg-xinit dmenu pango notification-daemon libnotify lxterminal xsetwacom
+
+#install yay
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -rf yay
+
+yay -S siji-git polybar
 
 # Vim
 git clone --depth=1 https://github.com/amix/vimrc.git .dotfiles/vim_runtime
