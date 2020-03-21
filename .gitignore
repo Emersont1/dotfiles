@@ -1,0 +1,5 @@
+.dotfiles/vim_runtime/*
+!.dotfiles/vim_runtime/custom
+.dotfiles/oh-my-zsh/*
+.config/i3/config
+!.config/i3/config.d/*
