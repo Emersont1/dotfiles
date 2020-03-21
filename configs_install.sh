@@ -18,7 +18,8 @@ git clone --depth=1 https://github.com/amix/vimrc.git .dotfiles/vim_runtime
 
 # Zsh
 git clone https://github.com/ohmyzsh/ohmyzsh.git .dotfiles/oh-my-zsh
-
+git clone https://github.com/zsh-users/zsh-completions .dotfiles/oh-my-zsh/custom/plugins/zsh-completions
+sudo chsh et1 -s $(which zsh)
 # i3
 ## Init the i3 config
 cat .config/i3/config.d/* > .config/i3/config
