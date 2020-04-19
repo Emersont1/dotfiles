@@ -1,0 +1,8 @@
+[user]
+	name = Peter Taylor
+	email = info@emersont1.co.uk
+[commit]
+	gpgsign = true
+[color]
+	ui = auto
+  
