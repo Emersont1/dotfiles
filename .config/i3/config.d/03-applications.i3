@@ -9,14 +9,11 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 bindsym $mod+d exec "rofi -show run"
-bindsym $mod+ exec "passmenu"
+bindsym $mod+p exec "passmenu"
 
 
 exec setxkbmap gb
-exec synapse
 exec redshift-gtk
-exec nm-applet &
-#exec swaymsg output DVI-D-1 pos 1920 0
-#exec swaymsg output HDMI-A-1 pos 0 0
-exec /usr/lib/notification-daemon-1.0/notification-daemon &
 exec polybar topbar &
+exec dunst &
+exec flameshot & 

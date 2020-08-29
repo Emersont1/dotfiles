@@ -28,11 +28,12 @@ alert = #de8e47
 [bar/topbar]
 monitor = ${env:MONITOR:eDP-1}
 width = 100%
-height = 18
+height = 20
 offset-x = 0%
 offset-y = 0%
 radius = 0
-fixed-center = false
+fixed-center = true
+wm-restack=i3
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -44,18 +45,18 @@ border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 2
+padding-right = 0
 
-module-margin-left = 1
-module-margin-right = 2
+module-margin-left = 0
+module-margin-right = 3
 
-font-0 = pango fixed:pixelsize=8;1
+font-0 = UbuntuMono-regular:pixelsize=9;0
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = i3
 modules-center = cmus
-modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth battery temperature date
+modules-right =  pulseaudio xkeyboard memory cpu wlan eth battery temperature date
 
 tray-position = right
 tray-padding = 2

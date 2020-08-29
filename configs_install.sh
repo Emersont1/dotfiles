@@ -9,7 +9,7 @@ fi
 mkdir_safe .dotfiles
 
 # Install Packages
-sudo pacman -S --noconfirm vim zsh i3-gaps bdf-unifont feh xorg xorg-xinit dmenu pango notification-daemon libnotify lxterminal xf86-input-wacom pulseaudio pavucontrol pulseaudio-alsa firefox evolution cmus
+sudo pacman -S --noconfirm vim zsh i3-gaps bdf-unifont feh xorg xorg-xinit dmenu pango dunst libnotify lxterminal xf86-input-wacom pulseaudio pavucontrol pulseaudio-alsa firefox thunderbird cmus flameshot
 
 #install yay
 git clone https://aur.archlinux.org/yay.git
