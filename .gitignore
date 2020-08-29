@@ -3,3 +3,14 @@
 .dotfiles/oh-my-zsh/*
 .config/i3/config
 !.config/i3/config.d/*
+.cache/
+.gnupg/
+.local/share
+.mozilla
+.password-store
+.pki
+.vscode*
+.config/autostart
+.config/Code - OSS
+.config/Nextcloud
+.config/discord

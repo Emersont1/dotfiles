@@ -1,4 +1,4 @@
-exec feh --bg-fill ~/.dotfiles/wallpaper.jpg
+exec feh --bg-fill /usr/share/backgrounds/cyberman.jpg
 
 exec polybar.sh
 
@@ -10,3 +10,7 @@ client.urgent           #DE8E47 #DE8E47 #FFFFFF #DE8E47   #de8e47
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
 client.background       #FFFFFF
+new_window pixel 2
+gaps inner 5
+gaps outer 5
+

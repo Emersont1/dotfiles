@@ -1,7 +1,7 @@
 
 set $mod Mod4
 
-font pango:monospace 8
+font pango:UbuntuMono-regular 12
 
 floating_modifier $mod
 
