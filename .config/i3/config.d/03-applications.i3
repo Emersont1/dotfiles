@@ -9,7 +9,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 bindsym $mod+d exec "rofi -show run"
-bindsym $mod+ exec "passmenu"
+bindsym $mod+p exec "passmenu"
 
 
 exec setxkbmap gb
