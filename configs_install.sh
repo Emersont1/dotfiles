@@ -38,3 +38,5 @@ cat .config/i3/config.d/* > .config/i3/config
 # setup git identity
 git config --global user.name "Peter Taylor"
 git config --global user.email "info@emersont1.co.uk"
+
+sudo cp .dotfiles/background.jpg  /usr/share/backgrounds/cyberman.jpg
