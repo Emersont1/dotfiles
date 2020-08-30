@@ -18,7 +18,7 @@ makepkg -si
 cd ..
 rm -rf yay
 
-yay -S siji-git polybar
+yay --noconfirm --removemake --nodiffmenu --noeditmenu -S siji-git polybar
 
 # Vim
 git clone --depth=1 https://github.com/amix/vimrc.git .dotfiles/vim_runtime
