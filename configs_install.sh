@@ -12,11 +12,15 @@ mkdir_safe .dotfiles
 sudo pacman -S --noconfirm vim zsh i3-gaps bdf-unifont feh xorg xorg-xinit dmenu pango dunst libnotify lxterminal xf86-input-wacom pulseaudio pavucontrol pulseaudio-alsa firefox thunderbird cmus flameshot
 
 #install yay
+if pacman -Qs yay > /dev/null ; then
+echo "yay installed... skipping"
+else
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 cd ..
 rm -rf yay
+fi
 
 yay --noconfirm --removemake --nodiffmenu --noeditmenu -S siji-git polybar
 
