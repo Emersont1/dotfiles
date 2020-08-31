@@ -336,7 +336,7 @@ label-font = 1
 format = <label>
 format-underline = ${colors.foreground-alt}
 label = %output%
-label-maxlen = 50
+label-maxlen = 150
 
 [module/temperature]
 type = internal/temperature
