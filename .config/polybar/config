@@ -332,7 +332,7 @@ click-middle = cmus-remote --pause
 scroll-up = cmus-remote --volume +5%
 scroll-down = cmus-remote --volume -5%
 
-label-font = 3
+label-font = 1
 format = <label>
 format-underline = ${colors.foreground-alt}
 label = %output%
