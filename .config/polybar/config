@@ -319,24 +319,15 @@ animation-discharging-2 = 
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
 
-[module/cmus]
-type = custom/script
-
-exec = ~/.config/polybar/cmus.sh
-exec-if = pgrep -x cmus
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
 interval = 1
+format-online = <label-song> (<label-time>) 
+label-song = %artist% - %title%
+label-offline = mpd is offline
 
-click-left = cmus-remote --next
-click-right = cmus-remote --prev
-click-middle = cmus-remote --pause
-scroll-up = cmus-remote --volume +5%
-scroll-down = cmus-remote --volume -5%
-
-label-font = 1
-format = <label>
-format-underline = ${colors.foreground-alt}
-label = %output%
-label-maxlen = 150
 
 [module/temperature]
 type = internal/temperature
