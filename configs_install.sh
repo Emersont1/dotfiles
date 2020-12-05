@@ -9,7 +9,7 @@ fi
 mkdir_safe .dotfiles
 
 # Install Packages
-sudo pacman -S --noconfirm vim zsh i3-gaps bdf-unifont feh xorg xorg-xinit dmenu pango dunst libnotify lxterminal xf86-input-wacom pulseaudio pavucontrol pulseaudio-alsa firefox thunderbird cmus flameshot ttf-ubuntu-font-family rofi dmenu
+sudo pacman -S --noconfirm vim zsh i3-gaps bdf-unifont feh xorg xorg-xinit dmenu pango dunst libnotify lxterminal xf86-input-wacom pulseaudio pavucontrol pulseaudio-alsa firefox thunderbird cmus flameshot ttf-ubuntu-font-family rofi dmenu mpd ario kdeconnect
 
 #install yay
 if pacman -Qs yay > /dev/null ; then
