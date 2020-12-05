@@ -17,3 +17,6 @@ exec redshift-gtk
 exec polybar topbar &
 exec dunst &
 exec flameshot & 
+exec mpd &
+exec --no-startup-id /usr/lib/kdeconnectd
+exec --no-startup-id kdeconnect-indicator
